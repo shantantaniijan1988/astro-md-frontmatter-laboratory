@@ -1,0 +1,13 @@
+@use "mixins" as *;
+@use "variables" as *;
+@use "colors" as *;
+@use "reset";
+
+.container {
+  @include contentWidth;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 32px;
+}

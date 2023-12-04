@@ -1,0 +1,20 @@
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin mq($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin contentWidth {
+  width: 1024px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
